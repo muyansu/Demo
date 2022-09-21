@@ -74,7 +74,7 @@ let Statements = new Promise((res,rej)=>{//获取每日一句
 });
 //测试的时候可以改为    3 * * * * *   每分钟的第三秒执行一次
 // 0 0 7 * * * 每天早上7点执行一次
-schedule.scheduleJob('0 0 7 * * *',()=>{//每天早上7点执行一次
+schedule.scheduleJob('* 1 * * * *',()=>{//每天早上7点执行一次
     console.log('我执行啦')
 	Promise.all([AccessToken,Weather,Statements]).then((res)=>{
         console.log(res)
