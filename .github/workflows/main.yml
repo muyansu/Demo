@@ -9,7 +9,10 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+  schedule:
+    - cron: '5 * * * *'
+    #0 0 7 * *
+  #该cron有五个由空格分隔的字段，每个字段代表一个时间单位。第一个数字代表分钟，第二个数字代表小时，第三个数字代表日，第四个数字代表月，第五个数字代表星期。
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
