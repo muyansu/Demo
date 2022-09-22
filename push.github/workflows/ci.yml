@@ -23,7 +23,7 @@ jobs:
                     node-version: 10
              name: npm install and test
                 # 运行的命令或者 action
-               run: |
+               run:  |
                     npm install
                     npm start
                  # 环境变量
