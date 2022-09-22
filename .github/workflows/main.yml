@@ -6,9 +6,12 @@ name: Test
 on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-  schedule:
+  schedule: 
+    # 代表国际标准时间23点0分，北京时间需要+8小时，代表北京时间上午7点运行
+    - cron: '0 23 * * *'
+  # 定时任务，在每天的5点推送天气信息到邮箱
+    - cron:  '30 5,17 * * *'
+    - cron: '0 21 * * *'
     - cron: '20/15 * * * *'
     - cron: '0 22 * * *'
     - cron: '30 22 * * *'
