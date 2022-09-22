@@ -9,7 +9,10 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+ 
+ 
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
@@ -19,15 +22,15 @@ jobs:
       - name: 'Checkout codes' # 步骤一，获取仓库代码
         uses: actions/checkout@v2
           # action命令，安装Node10
-          - name: use Node.js 10
-           uses: actions/setup-node@v2
-                with:
-                    node-version: 10
-             name: npm install and test
+      - name: use Node.js 10
+        uses: actions/setup-node@v2
+        with:
+            node-version: 10
+      - name: npm install and start
                 # 运行的命令或者 action
-               run:  |
-                    npm install
-                    npm start
+        run: |
+            npm install
+            npm start
                  # 环境变量
                 env:
                     CI: true
