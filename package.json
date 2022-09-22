@@ -4,7 +4,7 @@
   "description": "我的第一个node项目",
   "main": "index.js",
   "scripts": {
-    "start": "hotnode index.js",
+    "start": "npm run serve",
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack --version"
   },
