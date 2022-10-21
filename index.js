@@ -6,8 +6,8 @@ let appID = 'wx362d1f1eb005ac4e'//测试号appID（写你自己的）
 let appsecret = '02b5399b7c7a8a643043b119de456d09'//测试号appsecret（写你自己的）
 
 let getAccessToken = `https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${appID}&secret=${appsecret}`//获取AccessToken
-let getWeather = `https://www.yiketianqi.com/free/day?appid=72693185&appsecret=DQb7Pxn9&unescape=1&cityid=101060101`//获取指定地区天气（写你自己的）//长春
-// let getWeather = `https://www.yiketianqi.com/free/day?appid=72693185&appsecret=DQb7Pxn9&unescape=1&cityid=101060401`//四平
+// let getWeather = `https://www.yiketianqi.com/free/day?appid=72693185&appsecret=DQb7Pxn9&unescape=1&cityid=101060101`//获取指定地区天气（写你自己的）//长春
+let getWeather = `https://www.yiketianqi.com/free/day?appid=72693185&appsecret=DQb7Pxn9&unescape=1&cityid=101060401`//四平
 let getStatements = `https://v2.alapi.cn/api/qinghua?token=WcCTcBCxcT57YWY5`//获取每日一句（写你自己的）
 let sendMessage = 'https://api.weixin.qq.com/cgi-bin/message/template/send?access_token='//发送模板
 function getTargetTime(t){//获取指定日期到今天的天数
