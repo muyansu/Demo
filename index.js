@@ -81,7 +81,8 @@ let Statements = new Promise((res,rej)=>{//获取每日一句
         console.log(res)
 		let data = {
 			touser:'o3rwE6fgDGvrMNC0fklNGZYAgtCw',//发送人的微信号ID（写你自己的）
-			template_id:'sDzKRe14hLE3MZTaBR_Gazjyh7xtvokLoWxj8RbnqNY',//测试模板的ID（写你自己的）
+// 			template_id:'sDzKRe14hLE3MZTaBR_Gazjyh7xtvokLoWxj8RbnqNY',//测试模板的ID（写你自己的）
+			template_id:'wgBLJf-no0PYktxHAaJ6usBEgWUHDZH8wMplEz2u1DY',//测试模板的ID（写你自己的）
 			data:{
 				data1:{//多少天
 					value:String(getTargetTime('2021-03-17')),//设置在一起的日子，格式别变
