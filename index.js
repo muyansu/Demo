@@ -93,7 +93,7 @@ let Statements = new Promise((res,rej)=>{//获取每日一句
 					color:coloring()
 				},
                 data3:{//多少天
-					value:String(getTargetTime('2022-11-13')),//设置在一起的日子，格式别变
+					value:String(getTargetTime('2023-11-13')),//设置在一起的日子，格式别变
 					color:coloring()
 				},
 				remake:{//备注
