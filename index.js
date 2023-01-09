@@ -17,7 +17,7 @@ function getTargetTime(t){//获取指定日期到今天的天数
     var distance= Math.abs(date2 - date1);
     //毫秒数除以一天的毫秒数,就得到了天数
     var days = Math.floor(distance / (24 * 3600 * 1000));
-    return days ;
+    return  days ;
 
 }
 console.log(getTargetTime('2022-10-06'))
