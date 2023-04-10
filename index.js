@@ -191,8 +191,8 @@ let Statements = new Promise((res,rej)=>{//获取每日一句
 // });
 
 console.log('运行成功，等待程序发送中........')
-
-//模板示例
+//4.10更新一下
+//模板示例(在微信平台放的模板)
 // 
 
 // 今天是：{{date.DATA}}  {{week.DATA}}
